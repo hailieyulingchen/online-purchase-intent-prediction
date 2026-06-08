@@ -1,27 +1,33 @@
-# Predicting Online Shopping Intent: A Comparative Stusy of New And Returning Visitors with Machine Learning Models
+# Predicting Online Shopping Intent: A Comparative Study of New and Returning Visitors with Machine Learning Models
+
+Master's Thesis Project | Tilburg University | MSc Data Science and Society
 
 ## Project Overview
+This project predicts whether online shoppers will make a purchase based on their browsing behavior and session characteristics.
 
-This project investigates whether online shoppers will complete a purchase based on their browsing behavior and session characteristics.
+Unlike most previous studies that analyze all visitors as a single group, this project investigates new visitors and returning visitors separately to better understand behavioral differences and improve prediction performance.
 
-While many previous studies focus on predicting purchase intent using the entire customer population, this project introduces a segmentation-based approach by analyzing new visitors and returning visitors separately. The goal is to understand how different customer groups behave, identify the most influential factors driving purchases, and evaluate how machine learning models perform across these segments.
+Four machine learning models were evaluated, including Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting. Model interpretability was further explored using SHAP, while SMOTE was applied to address class imbalance.
 
-This project was developed as part of my Master's thesis in Data Science and Society at Tilburg University.
+This project was conducted as part of my MSc thesis in Data Science and Society at Tilburg University.
 
 ## Research Questions
-RQ1
-How do different machine learning models perform in predicting purchase intent for new and returning visitors?
+1. How do different machine learning models (linear and non-linear) perform in predicting purchase intent for new and returning visitors?
 
-RQ2
-Which features have the strongest impact on purchase intent for each customer group?
+2. Which features have the strongest impact on purchase intent for each group of customers?
 
-RQ3
-What is the impact of applying SMOTE to address class imbalance?
+3. What is the impact of handling class imbalance with SMOTE on the predictive performance of models for new and returning visitors?
 
 ## Dataset
-Online Shoppers Purchasing Intention Dataset
-Source: UCI Machine Learning Repository
-Target Variable: Revenue (Purchase / No Purchase)
-Customer Segments:
-New Visitors
-Returning Visitors
+**Online Shoppers Purchasing Intention Dataset** 
+- Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)
+- Records: 12,330 user sessions
+- Features: 18 numerical and categorical variables
+- Target Variable: Revenue (Purchase / No Purchase)
+- Customer Segments:
+  - New Visitors
+  - Returning Visitors
+
+## Technologies Used
+Python (Pandas, NumPy, Scikit-learn, Imbalanced-learn (SMOTE), SHAP, Matplotlib)
+
