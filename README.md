@@ -18,6 +18,19 @@ This project was conducted as part of my MSc thesis in Data Science and Society 
 
 3. What is the impact of handling class imbalance with SMOTE on the predictive performance of models for new and returning visitors?
 
+## Key Findings
+### Model Performance
+1. Random Forest achieved the best performance for new visitors, with an F1-score of 0.817.
+2. Gradient Boosting achieved the best performance for returning visitors, with an F1-score of 0.669.
+3. Ensemble methods consistently outperformed the baseline model across both visitor types.
+
+### Visitor Behavior Differences
+1. PageValues was consistently the most influential predictor.
+2. Product-related engagement and seasonal factors were key predictors for new visitors, while administrative and account-related activities played a more important role for returning visitors.
+
+### Impact of SMOTE
+Applying SMOTE generally improved model performance, particularly in terms of F1-score. The improvement was particularly significant for returning visitors, where class imbalance was more severe.
+
 ## Dataset
 **Online Shoppers Purchasing Intention Dataset** 
 - Source: [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dataset)
@@ -56,3 +69,10 @@ The following workflow summarizes the complete modeling process used in this pro
 ## ROC Curve Comparison
 ROC-AUC was used to evaluate the discriminative ability of each model.
 ![ROC Curve](images/roc_curves.png)
+
+## Repository Structure
+- EDA.ipynb – Exploratory Data Analysis
+- CV_withSMOTE.ipynb – Cross-validation and hyperparameter tuning with SMOTE
+- CV_withoutSMOTE.ipynb – Cross-validation and hyperparameter tuning without SMOTE
+- TTS_withSMOTE.ipynb – Final model training and evaluation with SMOTE
+- TTS_withoutSMOTE.ipynb – Final model training and evaluation without SMOTE
