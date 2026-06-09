@@ -74,5 +74,5 @@ ROC-AUC was used to evaluate the discriminative ability of each model.
 - EDA.ipynb – Exploratory Data Analysis
 - CV_withSMOTE.ipynb – Cross-validation and hyperparameter tuning with SMOTE
 - CV_withoutSMOTE.ipynb – Cross-validation and hyperparameter tuning without SMOTE
-- TTS_withSMOTE.ipynb – Final model training and evaluation with SMOTE
-- TTS_withoutSMOTE.ipynb – Final model training and evaluation without SMOTE
+- TTS_withSMOTE.ipynb – Model training and testing with SMOTE
+- TTS_withoutSMOTE.ipynb – Model training and testing on the original dataset
