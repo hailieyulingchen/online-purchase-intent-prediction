@@ -31,3 +31,28 @@ This project was conducted as part of my MSc thesis in Data Science and Society 
 ## Technologies Used
 Python (Pandas, NumPy, Scikit-learn, Imbalanced-learn (SMOTE), SHAP, Matplotlib)
 
+## Project Workflow
+The following workflow summarizes the complete modeling process used in this project.
+![Workflow](images/workflow.png)
+
+## Model Performance
+
+### New Visitors
+| Model | Accuracy | F1-score |
+|---------|---------|---------|
+| Logistic Regression | 0.903 | 0.798 |
+| Decision Tree | 0.888 | 0.763 |
+| Random Forest | **0.912** | **0.817** |
+| Gradient Boosting | 0.909 | 0.812 |
+
+### Returning Visitors
+| Model | Accuracy | F1-score |
+|---------|---------|---------|
+| Logistic Regression | 0.852 | 0.616 |
+| Decision Tree | 0.867 | 0.636 |
+| Random Forest | 0.882 | 0.654 |
+| Gradient Boosting | **0.892** | **0.669** |
+
+## ROC Curve Comparison
+ROC-AUC was used to evaluate the discriminative ability of each model.
+![ROC Curve](images/roc_curves.png)
